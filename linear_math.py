@@ -57,9 +57,19 @@ class linear():
     def x_int(self):
         return self.x_intercept
     
-#    def point_x(self,y):
+    def point_x(self,y):
+        if self.sign == '+':
+            x = (y - self.b)/self.m
+        elif self.sign == '-':
+            x = (y + self.b)/self.m
+        return x
 
-#    def point_y(self,x):
+    def point_y(self,x):
+        if self.sign == '+':
+            y = self.m * x + self.b
+        elif self.sign == '-':
+            y = self.m * x - self.b
+        return y
     
     def equation(self,form='point slope'):
         space = ' '
