@@ -93,7 +93,7 @@ class linear():
         else:
             print('Form not supported')
     
-    def console_plot(self,len_x=10,len_y=10,plot_fmt = 'plus',space=1):
+    def console_plot(self,len_x=10,len_y=10,plot_fmt='plus',space=1):
         plot_formats = {'plus':'+','point':'.','asterisk':'*','carot':'^'}
         point = plot_formats[plot_fmt]
         y_axis = ''
