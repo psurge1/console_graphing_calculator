@@ -92,3 +92,29 @@ class linear():
             return s_equation
         else:
             print('Form not supported')
+    
+    def console_plot(self,len_x=10,len_y=10,plot_fmt = 'plus',space=1):
+        plot_formats = {'plus':'+','point':'.','asterisk':'*','carot':'^'}
+        point = plot_formats[plot_fmt]
+        y_axis = ''
+        x_axis = ''
+        str_x_unit = '_'
+        str_y_unit = '|'
+        str_unit = '  '
+        graph = []
+        axis = [str_y_unit]
+        x_axis = [str_y_unit]
+        x_factor = 2*space
+        y_factor = space
+
+        for y_unit in range(len_y-1):
+            for x_unit in range(len_x):
+                axis.append(str_unit)
+            graph.append(axis)
+            axis = [str_y_unit]
+
+        for unit in range(len_x):
+            x_axis.append(str_x_unit)
+
+        graph.append(x_axis)
+        x_axis = [str_y_unit]
