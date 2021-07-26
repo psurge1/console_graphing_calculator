@@ -198,7 +198,6 @@ X-int: -0.005291005291005291
 
 ### Console Plot
 
-1
 ```python
 a = linear('y=2/3x+2')
 graph = a.console_plot(len_x=10,len_y=10,description=True)
@@ -223,7 +222,6 @@ X-int: -3.0
 Graph Scale: 1
 ```
 
-2
 ```python
 a = linear('y=2x+1')
 graph = a.console_plot(len_x=20,len_y=20,scale=2,plot_fmt='carot')
