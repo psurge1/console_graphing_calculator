@@ -112,7 +112,7 @@ class linear():
         else:
             print('Form not supported')
     
-    def console_plot(self,toplot=equation,len_x=10,len_y=10,plot_fmt='plus',scale=1,description=False):
+    def console_plot(self,len_x=10,len_y=10,plot_fmt='plus',scale=1,description=False):
         plot_formats = {'plus':'+','point':'.','asterisk':'*','carot':'^'}
         point = plot_formats[plot_fmt]
         str_graph = f''
