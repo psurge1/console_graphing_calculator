@@ -72,7 +72,7 @@ returns the corresponding y value
 ### Graph Plot Function
 
 ```python
-self.console_plot(len_x,len_y,plot_fmt,scale,description)
+self.console_plot(len_x, len_y, plot_fmt, scale, description)
 ```
 
 #### Parameters:
