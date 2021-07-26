@@ -142,11 +142,11 @@ returns the corresponding y value (float)
 
 ```python
 a = linear('y=4x-2')
-y = point_y(2)
+y = point_y(3) #y = 3
 print (y)
 ```
 ```
-6.0
+10.0
 ```
 
 ‎
