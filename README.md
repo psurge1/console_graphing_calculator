@@ -41,7 +41,7 @@ returns the y intercept of the given linear equation
 self.x_intercept
 ```
 
-returns the x intercept of the given linear equation
+returns the x intercept of the given linear equation\
 
 ## Other Related Functions
 
