@@ -16,21 +16,11 @@ returns the slope, y intercept, x intercept, and scale (if applicable) of the gi
 
 ### Slope
 
-self.slope()
-
-```python
-self.slope()
-```
-
 ```python
 self.m
 ```
 
 ### Y Intercept
-
-```python
-self.y_int()
-```
 
 ```python
 self.b
@@ -41,10 +31,6 @@ self.y_intercept
 ```
 
 ### X Intercept
-
-```python
-self.x_int()
-```
 
 ```python
 self.x_intercept
