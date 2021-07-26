@@ -10,9 +10,9 @@
 
 self.slope()
 
-``py 
-def hi:
-``
+```python
+def hi():
+```
 
 self.y_int() - float
 
