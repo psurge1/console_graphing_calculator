@@ -14,7 +14,7 @@ self.properties()
 ```
 
 returns the slope, y intercept, x intercept, and scale (if applicable) of the given linear equation
-‎
+
 ### Slope
 
 ```python
@@ -22,8 +22,6 @@ self.m
 ```
 
 returns the slope of the given linear equation
-
-‎
 
 ### Y Intercept
 
@@ -44,6 +42,9 @@ self.x_intercept
 ```
 
 returns the x intercept of the given linear equation \
+
+‎
+
 ## Other Related Functions
 
 ### Point X Function
@@ -58,6 +59,8 @@ returns the corresponding x value
 
 ##### y (float)
 
+‎
+
 ### Point Y Function
 
 ```python
@@ -69,6 +72,8 @@ returns the corresponding y value
 #### Parameters:
 
 ##### x (float)
+
+‎
 
 ### Graph Plot Function
 
@@ -100,6 +105,8 @@ self.console_plot(len_x, len_y, plot_fmt, scale, description)
 ###### - y intercept
 ###### - x intercept
 ###### - scale (if applicable)
+
+‎
 
 ### Equation Function
 
