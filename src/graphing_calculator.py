@@ -13,7 +13,7 @@ class linear():
         #m_found = False
         #b_found = False
         self.standard_equation = []
-        self.point_slope_equation = []
+        self.slope_intercept_equation = []
 
         for character in range(equation_length):
             if self.raw_equation[character] == '=':
@@ -66,7 +66,7 @@ class linear():
         self.x_intercept = (0-self.b)/self.m 
 
         equation_list = ['y','=',self.m,'x',self.sign,self.b]
-        self.point_slope_equation = ['y',space,'=',space,self.m,'x',space,self.sign,space,self.b]
+        self.slope_intercept_equation = ['y',space,'=',space,self.m,'x',space,self.sign,space,self.b]
         if self.sign == '+':
             b_sign = ''
         elif self.sign == '-':
@@ -100,7 +100,7 @@ class linear():
         ps_equation = ''
         st_equation = ''
 
-        for item_ps in self.point_slope_equation:
+        for item_ps in self.slope_intercept_equation:
             ps_equation += str(item_ps)
         for item_s in self.standard_equation:
             st_equation += str(item_s) 
@@ -201,4 +201,3 @@ class linear():
             b += 1
 
         return prop_string
-    
