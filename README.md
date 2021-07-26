@@ -1,1 +1,1 @@
-# linear_equation_manipulation
+# graphing calculator
