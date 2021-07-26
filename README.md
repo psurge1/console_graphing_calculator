@@ -6,54 +6,109 @@
 
 
 
-## Functions
+## Properties
+
+```python
+self.properties()
+```
+
+returns the slope, y intercept, x intercept, and scale (if applicable) of the given equation
+
+### Slope
 
 self.slope()
 
 ```python
-def hi():
+self.slope()
 ```
 
-self.y_int() - float
+```python
+self.m
+```
 
-self.x_int() - float
+### Y Intercept
 
-self.point_x(y) - float (given a y value, finds the x value)
-y - int or float
+```python
+self.y_int()
+```
 
-self.point_y(x) - float (given an x value, finds the y value)
-x - int or float
+```python
+self.b
+```
 
-self.equation(form) - string (returns the equation)
-form - string ('point slope', 'standard')
+```python
+self.y_intercept
+```
 
-self.console_plot(len_x,len_y,plot_fmt,scale,description) - string
+### X Intercept
+
+```python
+self.x_int()
+```
+
+```python
+self.x_intercept
+```
+
+### Other Related Functions
+
+```python
+self.point_x(y)
+```
+
+```python
+self.point_y(x)
+```
+
+## Graph Plot
+
+```python
+self.console_plot(len_x,len_y,plot_fmt,scale,description)
+```
+
+ - string
 (plots a customizeable graph)
 len_x - int (width of the x axis in '_ '
 len_y - int (height of the y axis in '|'
 plot_fmt - str (point symbol: 'plus':'+','point':'.','asterisk':'*','carot':'^')
 description - bool (show the properties of the graph)
 
-self.properties() - str (returns the slope, y intercept, x intercept, and scale if applicable of the equation)
-
 ## Other
 
-self.raw_equation - str
+```python
+self.equation(form)
+```
 
-self.standard_equation - list
+ - string (returns the equation)
+form - string ('point slope', 'standard')
 
-self.slope_intercept_equation - list
 
-self.sign - str (slope intercept sign)
+```python
+self.raw_equation
+```
+ - str
 
-self.m - float (slope)
+```python
+self.standard_equation
+```
+ - list
 
-self.b - float (y intercept)
+```python
+self.slope_intercept_equation
+```
+- list
 
-self.y_intercept - float
+```python
+self.sign
+```
+ - str (slope intercept sign)
 
-self.x_intercept - float
+```python
+self.x_factor
+```
+ - int (number of spaces for each whole x unit)
 
-self.x_factor - int (number of spaces for each whole x unit)
-
-self.y_factor - int (number of spaces for each whole y unit)
+```python
+self.y_factor
+```
+ - int (number of spaces for each whole y unit)
