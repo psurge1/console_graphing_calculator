@@ -6,19 +6,22 @@
 
 
 
-## Properties
+## Graph Properties
 
+### Properties Function
 ```python
 self.properties()
 ```
 
-returns the slope, y intercept, x intercept, and scale (if applicable) of the given equation
+returns the slope, y intercept, x intercept, and scale (if applicable) of the given linear equation
 
 ### Slope
 
 ```python
 self.m
 ```
+
+returns the slope of the given linear equation
 
 ### Y Intercept
 
@@ -30,23 +33,39 @@ self.b
 self.y_intercept
 ```
 
+returns the y intercept of the given linear equation
+
 ### X Intercept
 
 ```python
 self.x_intercept
 ```
 
-### Other Related Functions
+returns the x intercept of the given linear equation
+
+## Other Related Functions
+
+### Point X Function
 
 ```python
 self.point_x(y)
 ```
 
+returns the corresponding x value
+
+#### Y (float)
+
+### Point Y Function
+
 ```python
 self.point_y(x)
 ```
 
-## Graph Plot
+returns the corresponding y value
+
+#### X (float)
+
+### Graph Plot Function
 
 ```python
 self.console_plot(len_x,len_y,plot_fmt,scale,description)
@@ -75,15 +94,19 @@ prints the following properties under the graph:
 - x intercept
 - scale (if applicable)
 
-## Other
+### Equation Function
 
 ```python
 self.equation(form)
 ```
 
- - string (returns the equation)
-form - string ('point slope', 'standard')
+returns the given linear equation
 
+#### form 
+- 'point slope' _(default)_
+- 'standard'
+
+## Other
 
 ```python
 self.raw_equation
