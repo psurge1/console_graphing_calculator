@@ -182,31 +182,61 @@ returns the number of spaces for each whole y unit on the graph (int)
 
 ## Examples
 
+### 
+
+### Console Plot
+
+1
 ```python
-a = linear('y=2x+1')
-graph = a.console_plot(len_x=20,len_y=20)
+a = linear('y=2/3x+2')
+graph = a.console_plot(len_x=10,len_y=10,description=True)
 print (f'{graph}')
 ```
 returns (in the console):
 ```
+|
 |                  +
-|
-|                +
-|
-|              +
-|
+|              + +
 |            +
-|
-|          +
-|
-|        +
-|
+|        + +
 |      +
-|
-|    +
-|
-|  +
-|
+|  + +
 |+
+|
+| _ _ _ _ _ _ _ _ _ _
+y = 0.6666666666666666x + 2.0
+Slope: 0.6666666666666666
+Y-int: 2.0
+X-int: -3.0
+Graph Scale: 1
+```
+
+2
+```python
+a = linear('y=2x+1')
+graph = a.console_plot(len_x=20,len_y=20,scale=2,plot_fmt='carot')
+print (f'{graph}')
+```
+returns (in the console):
+```
+|
+|                                ^
+|
+|
+|
+|                        ^
+|
+|
+|
+|                ^
+|
+|
+|
+|        ^
+|
+|
+|
+|^
+|
 | _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 ```
