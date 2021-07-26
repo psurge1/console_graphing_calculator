@@ -5,7 +5,15 @@
 ## Table of Contents
 
 - Graph Properties
+    Properties Function
+    Slope
+    Y Intercept
+    X Intercept
 - Other Related Functions
+    Point X Function
+    Point Y Function
+    Console Plot Function
+    Equation Function
 - Other
 
 ‎
@@ -80,7 +88,7 @@ returns the corresponding y value as a float
 
 ‎
 
-### Graph Plot Function
+### Console Plot Function
 
 ```python
 self.console_plot(len_x, len_y, plot_fmt, scale, description)
