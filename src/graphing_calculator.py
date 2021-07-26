@@ -201,3 +201,4 @@ class linear():
             b += 1
 
         return prop_string
+    
