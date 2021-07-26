@@ -53,7 +53,7 @@ self.point_x(y)
 
 returns the corresponding x value
 
-#### Y (float)
+#### y (float)
 
 ### Point Y Function
 
@@ -63,7 +63,7 @@ self.point_y(x)
 
 returns the corresponding y value
 
-#### X (float)
+#### x (float)
 
 ### Graph Plot Function
 
