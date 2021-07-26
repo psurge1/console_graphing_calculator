@@ -27,6 +27,8 @@ self.properties()
 
 returns the slope, y intercept, x intercept, and scale (if applicable) of the given linear equation (string)
 
+#### Example
+
 ```python
 a = linear('y=42x+2/9')
 print (a.properties())
@@ -45,6 +47,16 @@ self.m
 ```
 
 returns the slope of the given linear equation (float)
+
+#### Example
+
+```python
+a = linear('y=')
+print ()
+```
+```
+
+```
 
 ### Y Intercept
 
@@ -66,6 +78,16 @@ self.x_intercept
 
 returns the x intercept of the given linear equation (float)
 
+#### Example
+
+```python
+a = linear('y=')
+print ()
+```
+```
+
+```
+
 ‎
 
 ## Other Related Functions
@@ -82,6 +104,16 @@ returns the corresponding x value as a float
 
 ##### y (float)
 
+#### Example
+
+```python
+a = linear('y=')
+print ()
+```
+```
+
+```
+
 ‎
 
 ### Point Y Function
@@ -95,6 +127,16 @@ returns the corresponding y value (float)
 #### Parameters:
 
 ##### x (float)
+
+#### Example
+
+```python
+a = linear('y=')
+print ()
+```
+```
+
+```
 
 ‎
 
@@ -126,8 +168,8 @@ print(f'{graph}')
 
 ###### - 'plus' --> '+' _(default)_
 ###### - 'point' --> '.'
+###### - 'carot' --> '^'
 ###### - 'asterisk' --> '*'
-###### - 'carot' -- > '^'
 
 ##### scale (int) _(default = 1)_
 
@@ -140,6 +182,8 @@ print(f'{graph}')
 ###### - y intercept
 ###### - x intercept
 ###### - scale (if applicable)
+
+#### Examples
 
 ```python
 a = linear('y=2/3x+2')
@@ -210,6 +254,16 @@ returns the given linear equation (str)
 ###### - 'point slope' _(default)_
 ###### - 'standard'
 
+#### Example
+
+```python
+a = linear('y=')
+print ()
+```
+```
+
+```
+
 ‎
 
 ## Other
@@ -218,39 +272,12 @@ returns the given linear equation (str)
 self.raw_equation
 ```
  returns the given linear equation with no spaces (str)
+ 
+ #### Example
 
 ```python
-self.standard_equation
-```
-returns the standard form of the given linear equation (list)
-
-```python
-self.slope_intercept_equation
-```
-returns the slope intercept form of the given linear equation (list)
-
-```python
-self.sign
-```
-returns the sign of the y intercept (str)
-
-```python
-self.x_factor
-```
- returns the number of '_ ' units for each whole x unit on the graph (int)
-
-```python
-self.y_factor
-```
-returns the number of spaces for each whole y unit on the graph (int)
-
-## Examples
-
-### Properties
-
-```python
-a = linear('y=42x+2/9')
-print (a.properties())
+a = linear('y=')
+print ()
 ```
 ```
 
@@ -259,12 +286,84 @@ print (a.properties())
 ‎
 
 ```python
-a = linear('y=42x+2/9')
-print (a.properties())
+self.standard_equation
+```
+returns the standard form of the given linear equation (list)
+
+#### Example
+
+```python
+a = linear('y=')
+print ()
 ```
 ```
 
 ```
 
-### Console Plot
+‎
 
+```python
+self.slope_intercept_equation
+```
+returns the slope intercept form of the given linear equation (list)
+
+#### Example
+
+```python
+a = linear('y=')
+print ()
+```
+```
+
+```
+
+‎
+
+```python
+self.sign
+```
+returns the sign of the y intercept (str)
+
+#### Example
+
+```python
+a = linear('y=')
+print ()
+```
+```
+
+```
+
+‎
+
+```python
+self.x_factor
+```
+ returns the number of '_ ' units for each whole x unit on the graph (int)
+ 
+ #### Example
+ 
+ ```python
+a = linear('y=')
+print ()
+```
+```
+
+```
+
+‎
+
+```python
+self.y_factor
+```
+returns the number of spaces for each whole y unit on the graph (int)
+
+#### Example
+
+```python
+a = linear('y=')
+print ()
+```
+```
+
+```
