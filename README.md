@@ -122,7 +122,7 @@ returns the given linear equation
 ###### - 'point slope' _(default)_
 ###### - 'standard'
 
-=============
+‎
 
 ## Other
 
