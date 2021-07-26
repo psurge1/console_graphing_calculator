@@ -2,6 +2,8 @@
 
 A tool to manipulate linear equations in the console
 
+‎
+
 ## Table of Contents
 
 - Graph Properties
