@@ -10,7 +10,9 @@
 
 self.slope()
 
-``Use `code` in your Markdown file.``
+``py 
+def hi:
+``
 
 self.y_int() - float
 
