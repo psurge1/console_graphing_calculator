@@ -182,7 +182,19 @@ returns the number of spaces for each whole y unit on the graph (int)
 
 ## Examples
 
-### 
+### Properties
+
+```python
+a = linear('y=42x+2/9')
+print (a.properties())
+```
+returns
+```
+y = 42.0x + 0.2222222222222222
+Slope: 42.0
+Y-int: 0.2222222222222222
+X-int: -0.005291005291005291
+```
 
 ### Console Plot
 
