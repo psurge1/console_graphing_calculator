@@ -268,11 +268,11 @@ returns the given linear equation (str)
 #### Example:
 
 ```python
-a = linear('y=')
-print ()
+a = linear('y=4x-2')
+print (a.equation(form='standard'))
 ```
 ```
-
+-4.0x + y = --2.0
 ```
 
 ‎
@@ -287,11 +287,11 @@ self.raw_equation
  #### Example:
 
 ```python
-a = linear('y=')
-print ()
+a = linear('y = 4x + 2')
+print (a.raw_equation)
 ```
 ```
-
+'y=4x+2'
 ```
 
 ‎
@@ -304,11 +304,11 @@ returns the standard form of the given linear equation (list)
 #### Example:
 
 ```python
-a = linear('y=')
-print ()
+a = linear('y=12x-2')
+print (a.standard_equation)
 ```
 ```
-
+[-12.0, 'x', ' ', '+', ' ', 'y', ' ', '=', ' ', '-', -2.0]
 ```
 
 ‎
@@ -321,11 +321,11 @@ returns the slope intercept form of the given linear equation (list)
 #### Example:
 
 ```python
-a = linear('y=')
+a = linear('y=12x-2')
 print ()
 ```
 ```
-
+['y', ' ', '=', ' ', 12.0, 'x', ' ', '-', ' ', -2.0]
 ```
 
 ‎
@@ -338,11 +338,11 @@ returns the sign of the y intercept (str)
 #### Example:
 
 ```python
-a = linear('y=')
-print ()
+a = linear('y=12x-2')
+print (a.sign)
 ```
 ```
-
+'-'
 ```
 
 ‎
