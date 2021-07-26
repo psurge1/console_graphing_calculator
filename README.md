@@ -26,7 +26,7 @@ self.properties()
 
 returns the slope, y intercept, x intercept, and scale (if applicable) of the given linear equation (string)
 
-#### Example
+#### Example:
 
 ```python
 a = linear('y=42x+2/9')
@@ -47,7 +47,7 @@ self.m
 
 returns the slope of the given linear equation (float)
 
-#### Example
+#### Example:
 
 ```python
 a = linear('y=')
@@ -69,6 +69,16 @@ self.y_intercept
 
 returns the y intercept of the given linear equation (float)
 
+#### Example:
+
+```python
+a = linear('y=')
+print ()
+```
+```
+
+```
+
 ### X Intercept
 
 ```python
@@ -77,7 +87,7 @@ self.x_intercept
 
 returns the x intercept of the given linear equation (float)
 
-#### Example
+#### Example:
 
 ```python
 a = linear('y=')
@@ -103,7 +113,7 @@ returns the corresponding x value as a float
 
 ##### y (float)
 
-#### Example
+#### Example:
 
 ```python
 a = linear('y=')
@@ -127,7 +137,7 @@ returns the corresponding y value (float)
 
 ##### x (float)
 
-#### Example
+#### Example:
 
 ```python
 a = linear('y=')
@@ -182,7 +192,7 @@ print(f'{graph}')
 ###### - x intercept
 ###### - scale (if applicable)
 
-#### Examples
+#### Examples:
 
 ```python
 a = linear('y=2/3x+2')
@@ -253,7 +263,7 @@ returns the given linear equation (str)
 ###### - 'point slope' _(default)_
 ###### - 'standard'
 
-#### Example
+#### Example:
 
 ```python
 a = linear('y=')
@@ -272,7 +282,7 @@ self.raw_equation
 ```
  returns the given linear equation with no spaces (str)
  
- #### Example
+ #### Example:
 
 ```python
 a = linear('y=')
@@ -289,7 +299,7 @@ self.standard_equation
 ```
 returns the standard form of the given linear equation (list)
 
-#### Example
+#### Example:
 
 ```python
 a = linear('y=')
@@ -306,7 +316,7 @@ self.slope_intercept_equation
 ```
 returns the slope intercept form of the given linear equation (list)
 
-#### Example
+#### Example:
 
 ```python
 a = linear('y=')
@@ -323,7 +333,7 @@ self.sign
 ```
 returns the sign of the y intercept (str)
 
-#### Example
+#### Example:
 
 ```python
 a = linear('y=')
@@ -340,7 +350,7 @@ self.x_factor
 ```
  returns the number of '_ ' units for each whole x unit on the graph (int)
  
- #### Example
+ #### Example:
  
  ```python
 a = linear('y=')
@@ -357,7 +367,7 @@ self.y_factor
 ```
 returns the number of spaces for each whole y unit on the graph (int)
 
-#### Example
+#### Example:
 
 ```python
 a = linear('y=')
