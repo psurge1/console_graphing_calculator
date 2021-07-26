@@ -338,7 +338,7 @@ returns the sign of the y intercept (str)
 #### Example:
 
 ```python
-a = linear('y=12x-2')
+a = linear('y=2x-2')
 print (a.sign)
 ```
 ```
@@ -350,16 +350,18 @@ print (a.sign)
 ```python
 self.x_factor
 ```
- returns the number of '_ ' units for each whole x unit on the graph (int)
+returns the number of '_ ' units for each whole x unit on the graph (int)
+Note: self.x_factor can only be used after self.console_plot() as self.x_factor is only applicable to that function
  
  #### Example:
  
  ```python
-a = linear('y=')
-print ()
+a = linear('y=4x-1')
+a.console_plot(scale=2)
+print (a.x_factor)
 ```
 ```
-
+4
 ```
 
 ‎
@@ -368,13 +370,15 @@ print ()
 self.y_factor
 ```
 returns the number of spaces for each whole y unit on the graph (int)
+Note: self.y_factor can only be used after self.console_plot() as self.y_factor is only applicable to that function
 
 #### Example:
 
 ```python
-a = linear('y=')
+a = linear('y=5x+2')
+a.console_plot(scale=3)
 print ()
 ```
 ```
-
+3
 ```
