@@ -6,17 +6,17 @@ A tool to manipulate linear equations in the console
 
 ## Table of Contents
 
-- **[Graph Properties](https://github.com/psurge1/graphing_calculator#graph-properties)**
-    [Properties Function](https://github.com/psurge1/graphing_calculator#properties-function)
-    [Slope](https://github.com/psurge1/graphing_calculator#slope)
-    [Y Intercept](https://github.com/psurge1/graphing_calculator#y-intercept)
-    [X Intercept](https://github.com/psurge1/graphing_calculator#x-intercept)
-- **[Other Related Functions](https://github.com/psurge1/graphing_calculator#other-related-functions)**
-    [Point X Function](https://github.com/psurge1/graphing_calculator#point-x-function)
-    [Point Y Function](https://github.com/psurge1/graphing_calculator#point-y-function)
-    [Console Plot Function](https://github.com/psurge1/graphing_calculator#console-plot-function)
-    [Equation Function](https://github.com/psurge1/graphing_calculator#equation-function)
-- **[Other](https://github.com/psurge1/graphing_calculator#other)**
+* **[Graph Properties](https://github.com/psurge1/graphing_calculator#graph-properties)**
+   * [Properties Function](https://github.com/psurge1/graphing_calculator#properties-function)
+   * [Slope](https://github.com/psurge1/graphing_calculator#slope)
+   * [Y Intercept](https://github.com/psurge1/graphing_calculator#y-intercept)
+   * [X Intercept](https://github.com/psurge1/graphing_calculator#x-intercept)
+* **[Other Related Functions](https://github.com/psurge1/graphing_calculator#other-related-functions)**
+   * [Point X Function](https://github.com/psurge1/graphing_calculator#point-x-function)
+   * [Point Y Function](https://github.com/psurge1/graphing_calculator#point-y-function)
+   * [Console Plot Function](https://github.com/psurge1/graphing_calculator#console-plot-function)
+   * [Equation Function](https://github.com/psurge1/graphing_calculator#equation-function)
+* **[Other](https://github.com/psurge1/graphing_calculator#other)**
 
 ‎
 
