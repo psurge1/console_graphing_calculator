@@ -175,3 +175,32 @@ self.y_factor
 returns the number of spaces for each whole y unit on the graph (int)
 
 ## Examples
+
+```python
+a = linear('y=2x+1')
+p = a.console_plot(len_x=20,len_y=20)
+print (f'{p}')
+```
+returns (in the console):
+```python
+|                  +
+|
+|                +
+|
+|              +
+|
+|            +
+|
+|          +
+|
+|        +
+|
+|      +
+|
+|    +
+|
+|  +
+|
+|+
+| _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+```
