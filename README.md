@@ -15,7 +15,6 @@ A tool to manipulate linear equations in the console
    * [Console Plot Function](https://github.com/psurge1/graphing_calculator#console-plot-function)
    * [Equation Function](https://github.com/psurge1/graphing_calculator#equation-function)
 * **[Other](https://github.com/psurge1/graphing_calculator#other)**
-* **[Examples](https://github.com/psurge1/graphing_calculator#examples)**
 
 ## Graph Properties
 
