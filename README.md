@@ -50,11 +50,11 @@ returns the slope of the given linear equation (float)
 #### Example:
 
 ```python
-a = linear('y=')
-print ()
+a = linear('y=4x-2')
+print (a.m)
 ```
 ```
-
+4.0
 ```
 
 ### Y Intercept
@@ -72,11 +72,11 @@ returns the y intercept of the given linear equation (float)
 #### Example:
 
 ```python
-a = linear('y=')
-print ()
+a = linear('y=2x+12')
+print (a.b)
 ```
 ```
-
+12.0
 ```
 
 ### X Intercept
@@ -90,11 +90,11 @@ returns the x intercept of the given linear equation (float)
 #### Example:
 
 ```python
-a = linear('y=')
-print ()
+a = linear('y=2x+12')
+print (a.x_intercept)
 ```
 ```
-
+-6.0
 ```
 
 ‎
@@ -116,11 +116,12 @@ returns the corresponding x value as a float
 #### Example:
 
 ```python
-a = linear('y=')
-print ()
+a = linear('y=4x-2')
+x = point_x(2) #x = 2
+print (y)
 ```
 ```
-
+1.0
 ```
 
 ‎
@@ -140,11 +141,12 @@ returns the corresponding y value (float)
 #### Example:
 
 ```python
-a = linear('y=')
-print ()
+a = linear('y=4x-2')
+y = point_y(2)
+print (y)
 ```
 ```
-
+6.0
 ```
 
 ‎
