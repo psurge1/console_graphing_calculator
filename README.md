@@ -53,7 +53,9 @@ self.point_x(y)
 
 returns the corresponding x value
 
-#### y (float)
+#### Parameters:
+
+###### y (float)
 
 ### Point Y Function
 
@@ -63,7 +65,9 @@ self.point_y(x)
 
 returns the corresponding y value
 
-#### x (float)
+#### Parameters:
+
+###### x (float)
 
 ### Graph Plot Function
 
@@ -71,22 +75,24 @@ returns the corresponding y value
 self.console_plot(len_x,len_y,plot_fmt,scale,description)
 ```
 
-#### len_x (int)
+#### Parameters:
+
+###### len_x (int)
 
 width of the x axis in units of '_ '
 
-#### len_y (int)
+###### len_y (int)
 
 height of the y axis in units of '|'
 
-#### plot_fmt (str)
+###### plot_fmt (str)
 
 - 'plus' --> '+'
 - 'point' --> '.'
 - 'asterisk' --> '*'
 - 'carot' -- > '^'
 
-#### description (bool)
+###### description (bool)
 
 prints the following properties under the graph:
 - slope
@@ -102,7 +108,9 @@ self.equation(form)
 
 returns the given linear equation
 
-#### form 
+#### Parameters:
+
+###### form 
 - 'point slope' _(default)_
 - 'standard'
 
