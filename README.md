@@ -1,6 +1,6 @@
 # Graphing Calculator
 
-
+A tool to manipulate linear equations in the console
 
 ## Table of Contents
 
@@ -26,7 +26,7 @@
 self.properties()
 ```
 
-returns the slope, y intercept, x intercept, and scale (if applicable) of the given linear equation as a string
+returns the slope, y intercept, x intercept, and scale (if applicable) of the given linear equation (string)
 
 ### Slope
 
@@ -34,7 +34,7 @@ returns the slope, y intercept, x intercept, and scale (if applicable) of the gi
 self.m
 ```
 
-returns the slope of the given linear equation as a float
+returns the slope of the given linear equation (float)
 
 ### Y Intercept
 
@@ -46,7 +46,7 @@ self.b
 self.y_intercept
 ```
 
-returns the y intercept of the given linear equation as a float
+returns the y intercept of the given linear equation (float)
 
 ### X Intercept
 
@@ -54,7 +54,7 @@ returns the y intercept of the given linear equation as a float
 self.x_intercept
 ```
 
-returns the x intercept of the given linear equation as a float
+returns the x intercept of the given linear equation (float)
 
 ‎
 
@@ -80,7 +80,7 @@ returns the corresponding x value as a float
 self.point_y(x)
 ```
 
-returns the corresponding y value as a float
+returns the corresponding y value (float)
 
 #### Parameters:
 
@@ -93,6 +93,8 @@ returns the corresponding y value as a float
 ```python
 self.console_plot(len_x, len_y, plot_fmt, scale, description)
 ```
+
+plots the given linear equation in the console (str)
 
 #### Parameters:
 
