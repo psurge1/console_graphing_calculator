@@ -73,15 +73,6 @@ class linear():
             b_sign = '-'
         self.standard_equation = [-1*self.m,'x',space,'+',space,'y',space,'=',space,b_sign,self.b]
     
-    def slope(self):
-        return self.m
-        
-    def y_int(self):
-        return self.b
-        
-    def x_int(self):
-        return self.x_intercept
-    
     def point_x(self,y):
         if self.sign == '+':
             x = (y - self.b)/self.m
