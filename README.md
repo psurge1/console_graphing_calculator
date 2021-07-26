@@ -55,8 +55,6 @@ self.x_intercept
 
 returns the x intercept of the given linear equation (float)
 
-‎
-
 ## Other Related Functions
 
 ### Point X Function
