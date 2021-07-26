@@ -74,17 +74,11 @@ class linear():
         self.standard_equation = [-1*self.m,'x',space,'+',space,'y',space,'=',space,b_sign,self.b]
     
     def point_x(self,y):
-        if self.sign == '+':
-            x = (y - self.b)/self.m
-        elif self.sign == '-':
-            x = (y + self.b)/self.m
+        x = (y - self.b)/self.m
         return x
 
     def point_y(self,x):
-        if self.sign == '+':
-            y = self.m * x + self.b
-        elif self.sign == '-':
-            y = self.m * x - self.b
+        y = self.m * x + self.b
         return y
     
     def equation(self,form='point slope'):
@@ -169,7 +163,8 @@ class linear():
             str_graph += '\n'
             str_graph += self.properties(scale)
 
-        return str_graph            
+        return str_graph
+            
 
     def properties(self,g_scale=None):
         prop_string = ''
@@ -191,3 +186,4 @@ class linear():
             b += 1
 
         return prop_string
+    
