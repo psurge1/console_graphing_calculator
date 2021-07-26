@@ -27,6 +27,17 @@ self.properties()
 
 returns the slope, y intercept, x intercept, and scale (if applicable) of the given linear equation (string)
 
+```python
+a = linear('y=42x+2/9')
+print (a.properties())
+```
+```
+y = 42.0x + 0.2222222222222222
+Slope: 42.0
+Y-int: 0.2222222222222222
+X-int: -0.005291005291005291
+```
+
 ### Slope
 
 ```python
@@ -130,6 +141,59 @@ print(f'{graph}')
 ###### - x intercept
 ###### - scale (if applicable)
 
+```python
+a = linear('y=2/3x+2')
+graph = a.console_plot(len_x=10,len_y=10,description=True)
+print (f'{graph}')
+```
+```
+|
+|                  +
+|              + +
+|            +
+|        + +
+|      +
+|  + +
+|+
+|
+| _ _ _ _ _ _ _ _ _ _
+y = 0.6666666666666666x + 2.0
+Slope: 0.6666666666666666
+Y-int: 2.0
+X-int: -3.0
+Graph Scale: 1
+```
+
+‎
+
+```python
+a = linear('y=2x+1')
+graph = a.console_plot(len_x=20,len_y=20,scale=2,plot_fmt='carot')
+print (f'{graph}')
+```
+```
+|
+|                                ^
+|
+|
+|
+|                        ^
+|
+|
+|
+|                ^
+|
+|
+|
+|        ^
+|
+|
+|
+|^
+|
+| _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+```
+
 ‎
 
 ### Equation Function
@@ -189,63 +253,18 @@ a = linear('y=42x+2/9')
 print (a.properties())
 ```
 ```
-y = 42.0x + 0.2222222222222222
-Slope: 42.0
-Y-int: 0.2222222222222222
-X-int: -0.005291005291005291
-```
 
-### Console Plot
-
-```python
-a = linear('y=2/3x+2')
-graph = a.console_plot(len_x=10,len_y=10,description=True)
-print (f'{graph}')
-```
-```
-|
-|                  +
-|              + +
-|            +
-|        + +
-|      +
-|  + +
-|+
-|
-| _ _ _ _ _ _ _ _ _ _
-y = 0.6666666666666666x + 2.0
-Slope: 0.6666666666666666
-Y-int: 2.0
-X-int: -3.0
-Graph Scale: 1
 ```
 
 ‎
 
 ```python
-a = linear('y=2x+1')
-graph = a.console_plot(len_x=20,len_y=20,scale=2,plot_fmt='carot')
-print (f'{graph}')
+a = linear('y=42x+2/9')
+print (a.properties())
 ```
 ```
-|
-|                                ^
-|
-|
-|
-|                        ^
-|
-|
-|
-|                ^
-|
-|
-|
-|        ^
-|
-|
-|
-|^
-|
-| _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
 ```
+
+### Console Plot
+
