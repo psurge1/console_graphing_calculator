@@ -1,5 +1,6 @@
 '''
-Python file of commands
+Python file of sample commands
+Check the README for more info
 '''
 
 from graphing_calculator import linear
