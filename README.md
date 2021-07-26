@@ -77,7 +77,7 @@ self.console_plot(len_x,len_y,plot_fmt,scale,description)
 
 #### Parameters:
 
-###### len_x (int)
+##### len_x (int)
 
 width of the x axis in units of '_ '
 
