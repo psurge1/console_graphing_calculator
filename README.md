@@ -66,12 +66,28 @@ self.point_y(x)
 self.console_plot(len_x,len_y,plot_fmt,scale,description)
 ```
 
- - string
-(plots a customizeable graph)
-len_x - int (width of the x axis in '_ '
-len_y - int (height of the y axis in '|'
-plot_fmt - str (point symbol: 'plus':'+','point':'.','asterisk':'*','carot':'^')
-description - bool (show the properties of the graph)
+#### len_x (int)
+
+width of the x axis in units of '_ '
+
+#### len_y (int)
+
+height of the y axis in units of '|'
+
+#### plot_fmt (str)
+
+- 'plus' --> '+'
+- 'point' --> '.'
+- 'asterisk' --> '*'
+- 'carot' -- > '^'
+
+#### description (bool)
+
+prints the following properties under the graph:
+- slope
+- y intercept
+- x intercept
+- scale (if applicable)
 
 ## Other
 
