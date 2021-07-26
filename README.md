@@ -279,6 +279,7 @@ print (a.equation(form='standard'))
 
 ## Other
 
+### raw_equation
 ```python
 self.raw_equation
 ```
@@ -296,6 +297,7 @@ print (a.raw_equation)
 
 ‎
 
+### standard_equation
 ```python
 self.standard_equation
 ```
@@ -313,6 +315,7 @@ print (a.standard_equation)
 
 ‎
 
+### slope_intercept_equation
 ```python
 self.slope_intercept_equation
 ```
@@ -330,6 +333,7 @@ print ()
 
 ‎
 
+### sign
 ```python
 self.sign
 ```
@@ -347,6 +351,7 @@ print (a.sign)
 
 ‎
 
+### x_factor
 ```python
 self.x_factor
 ```
@@ -366,6 +371,7 @@ print (a.x_factor)
 
 ‎
 
+### y_factor
 ```python
 self.y_factor
 ```
