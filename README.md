@@ -9,11 +9,12 @@
 ## Graph Properties
 
 ### Properties Function
+
 ```python
 self.properties()
 ```
 
-returns the slope, y intercept, x intercept, and scale (if applicable) of the given linear equation
+returns the slope, y intercept, x intercept, and scale (if applicable) of the given linear equation as a string
 
 ### Slope
 
@@ -21,7 +22,7 @@ returns the slope, y intercept, x intercept, and scale (if applicable) of the gi
 self.m
 ```
 
-returns the slope of the given linear equation
+returns the slope of the given linear equation as a float
 
 ### Y Intercept
 
@@ -33,7 +34,7 @@ self.b
 self.y_intercept
 ```
 
-returns the y intercept of the given linear equation
+returns the y intercept of the given linear equation as a float
 
 ### X Intercept
 
@@ -41,7 +42,7 @@ returns the y intercept of the given linear equation
 self.x_intercept
 ```
 
-returns the x intercept of the given linear equation
+returns the x intercept of the given linear equation as a float
 
 ‎
 
@@ -53,7 +54,7 @@ returns the x intercept of the given linear equation
 self.point_x(y)
 ```
 
-returns the corresponding x value
+returns the corresponding x value as a float
 
 #### Parameters:
 
@@ -67,7 +68,7 @@ returns the corresponding x value
 self.point_y(x)
 ```
 
-returns the corresponding y value
+returns the corresponding y value as a float
 
 #### Parameters:
 
@@ -114,7 +115,7 @@ self.console_plot(len_x, len_y, plot_fmt, scale, description)
 self.equation(form)
 ```
 
-returns the given linear equation
+returns the given linear equation as a string
 
 #### Parameters:
 
@@ -129,29 +130,29 @@ returns the given linear equation
 ```python
 self.raw_equation
 ```
- - str
+ returns the given linear equation as a string with no spaces
 
 ```python
 self.standard_equation
 ```
- - list
+returns the standard form of the given linear equation as a list
 
 ```python
 self.slope_intercept_equation
 ```
-- list
+returns the slope intercept form of the given linear equation as a list
 
 ```python
 self.sign
 ```
- - str (slope intercept sign)
+returns the sign of the y intercept as a string
 
 ```python
 self.x_factor
 ```
- - int (number of spaces for each whole x unit)
+ returns the number of spaces for each whole x unit as an integer
 
 ```python
 self.y_factor
 ```
- - int (number of spaces for each whole y unit)
+returns the number of spaces for each whole y unit as an integer
