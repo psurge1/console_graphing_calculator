@@ -84,22 +84,26 @@ self.console_plot(len_x, len_y, plot_fmt, scale, description)
 
 #### Parameters:
 
-##### len_x (int)
+##### len_x (int) _(default = 10)_
 
 ###### width of the x axis in units of '_ '
 
-##### len_y (int)
+##### len_y (int) _(default = 10)_
 
 ###### height of the y axis in units of '|'
 
 ##### plot_fmt (str)
 
-###### - 'plus' --> '+'
+###### - 'plus' --> '+' _(default)_
 ###### - 'point' --> '.'
 ###### - 'asterisk' --> '*'
 ###### - 'carot' -- > '^'
 
-##### description (bool)
+##### scale (int) _(default = 1)_
+
+###### number of units per whole number on the graph
+
+##### description (bool) _(default = False)_
 
 ###### prints the following properties under the graph:
 ###### - slope
@@ -115,7 +119,7 @@ self.console_plot(len_x, len_y, plot_fmt, scale, description)
 self.equation(form)
 ```
 
-returns the given linear equation as a string
+returns the given linear equation (str)
 
 #### Parameters:
 
@@ -130,29 +134,29 @@ returns the given linear equation as a string
 ```python
 self.raw_equation
 ```
- returns the given linear equation as a string with no spaces
+ returns the given linear equation with no spaces (str)
 
 ```python
 self.standard_equation
 ```
-returns the standard form of the given linear equation as a list
+returns the standard form of the given linear equation (list)
 
 ```python
 self.slope_intercept_equation
 ```
-returns the slope intercept form of the given linear equation as a list
+returns the slope intercept form of the given linear equation (list)
 
 ```python
 self.sign
 ```
-returns the sign of the y intercept as a string
+returns the sign of the y intercept (str)
 
 ```python
 self.x_factor
 ```
- returns the number of spaces for each whole x unit as an integer
+ returns the number of '_ ' units for each whole x unit on the graph (int)
 
 ```python
 self.y_factor
 ```
-returns the number of spaces for each whole y unit as an integer
+returns the number of spaces for each whole y unit on the graph (int)
