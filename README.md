@@ -2,7 +2,12 @@
 
 
 
-# Functions
+## Table of Contents
+
+
+
+## Functions
+
 self.slope() - float
 
 self.y_int() - float
@@ -27,7 +32,8 @@ description - bool (show the properties of the graph)
 
 self.properties() - str (returns the slope, y intercept, x intercept, and scale if applicable of the equation)
 
-# Other
+## Other
+
 self.raw_equation - str
 
 self.standard_equation - list
