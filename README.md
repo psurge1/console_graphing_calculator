@@ -6,17 +6,17 @@ A tool to manipulate linear equations in the console
 
 ## Table of Contents
 
-- Graph Properties
-    Properties Function
-    Slope
-    Y Intercept
-    X Intercept
-- Other Related Functions
-    Point X Function
-    Point Y Function
-    Console Plot Function
-    Equation Function
-- Other
+- [Graph Properties](https://github.com/psurge1/graphing_calculator#graph-properties)
+    [Properties Function]()
+    [Slope]()
+    [Y Intercept]()
+    [X Intercept]()
+- [Other Related Functions](https://github.com/psurge1/graphing_calculator#other-related-functions)
+    [Point X Function]()
+    [Point Y Function]()
+    [Console Plot Function]()
+    [Equation Function]()
+- [Other](https://github.com/psurge1/graphing_calculator#other)
 
 ‎
 
