@@ -184,8 +184,8 @@ returns the number of spaces for each whole y unit on the graph (int)
 
 ```python
 a = linear('y=2x+1')
-p = a.console_plot(len_x=20,len_y=20)
-print (f'{p}')
+graph = a.console_plot(len_x=20,len_y=20)
+print (f'{graph}')
 ```
 returns (in the console):
 ```
