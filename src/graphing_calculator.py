@@ -169,8 +169,7 @@ class linear():
             str_graph += '\n'
             str_graph += self.properties(scale)
 
-        return str_graph
-            
+        return str_graph            
 
     def properties(self,g_scale=None):
         prop_string = ''
