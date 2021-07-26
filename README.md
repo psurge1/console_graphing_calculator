@@ -15,8 +15,6 @@ self.properties()
 
 returns the slope, y intercept, x intercept, and scale (if applicable) of the given linear equation
 
-&nbsp  
-
 ### Slope
 
 ```python
