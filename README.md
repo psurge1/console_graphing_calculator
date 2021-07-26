@@ -5,9 +5,13 @@
 ## Table of Contents
 
 - Graph Properties
+##### -
 - Other Related Functions
+##### -
 - Other
+##### -
 
+‎
 
 ## Graph Properties
 
