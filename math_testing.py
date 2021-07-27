@@ -3,7 +3,7 @@ Python file of sample commands
 Check the README for more info
 '''
 
-from graphing_calculator import linear
+from console_graphing_calculator import linear
 
 
 a = linear('y=2x+0')
