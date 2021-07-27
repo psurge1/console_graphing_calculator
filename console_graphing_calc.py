@@ -15,17 +15,17 @@ class linear():
         self.standard_equation = []
         self.slope_intercept_equation = []
 
+        chars = {'1':['=','n/a'],'2':['y','n/a'],'3':['x','n/a'],'4':['+','n/a'],'5':['-','n/a']}
         for character in range(equation_length):
-            if self.raw_equation[character] == '=':
-                equals_pos = character
-            elif self.raw_equation[character] == 'y':
-                y_pos = character
-            elif self.raw_equation[character] == 'x':
-                x_pos = character
-            elif self.raw_equation[character] == '+':
-                plus_pos = character
-            elif self.raw_equation[character] == '-':
-                minus_pos = character
+            for num in range(1,6):
+                if self.raw_equation[character] == chars[str(num)][0]:
+                    chars[str(num)][1] = character
+
+        equals_pos = chars['1'][1]
+        y_pos = chars['2'][1]
+        x_pos = chars['3'][1]
+        plus_pos = chars['4'][1]
+        minus_pos = chars['5'][1]
 
         for position_one in range(equals_pos+1,x_pos):
             str_slope += str_equation[position_one]
@@ -50,17 +50,8 @@ class linear():
         else:
             print('Error')
 
-        if '/' in str_slope:
-            s_n,s_d = str_slope.split('/')
-            self.m = float(s_n)/float(s_d)
-        else:
-           self.m = float(str_slope)
-
-        if '/' in str_y_int:
-            b_n,b_d = str_y_int.split('/')
-            self.b = float(b_n)/float(b_d)
-        else:
-           self.b = float(str_y_int)
+        self.m = frac_to_float(str_slope)
+        self.b = frac_to_float(str_y_int)
 
         self.y_intercept = self.b
         self.x_intercept = (0-self.b)/self.m 
@@ -123,8 +114,7 @@ class linear():
             x_axis.append(' ')
             x_axis.append(str_x_unit)
         graph.append(x_axis)
-        
-        # graph code goes here
+
         unit_pairs = []
         for x_unit in range(math.ceil(len_x/scale)):
             point_xy = []
@@ -140,11 +130,6 @@ class linear():
         for unit_pair in range(len(unit_pairs)):
             for coordinate_pos in range(len(unit_pairs[unit_pair])):
                 formatted_pairs[unit_pair][coordinate_pos] = round(unit_pairs[unit_pair][coordinate_pos]*self.y_factor)
-
-        #print(unit_pairs)
-        #print(formatted_pairs)
-        #for thing in graph:
-        #    print(thing)
 
         for coordinate_pair in formatted_pairs:
             y_coord = -(coordinate_pair[1]+1)
@@ -186,4 +171,10 @@ class linear():
             b += 1
 
         return prop_string
-    
+
+def frac_to_float(frac):
+    if '/' in frac:
+        numerator,denominator = frac.split('/')
+        return float(numerator)/float(denominator)
+    else:
+        return float(frac)
