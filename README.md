@@ -1,4 +1,4 @@
-# Graphing Calculator
+# Console Graphing Calculator
 
 A tool to manipulate linear equations in the console
 
