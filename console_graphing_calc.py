@@ -117,7 +117,7 @@ class linear():
             potential_y_input = self.point_y(x_unit)
             potential_y = round(potential_y_input*scale)/scale
 
-            if potential_y < math.ceil(len_y/scale):
+            if potential_y < math.ceil(len_y/scale) and potential_y >= 0:
                 point_xy.append(float(x_unit))
                 point_xy.append(potential_y)
                 unit_pairs.append(point_xy)
@@ -131,7 +131,7 @@ class linear():
             y_coord = -(coordinate_pair[1]+1)
             x_coord = self.x_factor*coordinate_pair[0]+1
             graph[y_coord][x_coord] = point
-
+            
         a = 0
         for row in graph:
             if a != 0:
