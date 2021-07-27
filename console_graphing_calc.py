@@ -15,40 +15,36 @@ class linear():
         self.standard_equation = []
         self.slope_intercept_equation = []
 
-        chars = {'1':['=','n/a'],'2':['y','n/a'],'3':['x','n/a'],'4':['+','n/a'],'5':['-','n/a']}
+        chars = {0:['=','n/a'],1:['y','n/a'],2:['x','n/a'],3:['+','n/a'],4:['-','n/a']}
         for character in range(equation_length):
-            for num in range(1,6):
-                if self.raw_equation[character] == chars[str(num)][0]:
-                    chars[str(num)][1] = character
+            for num in range(5):
+                if self.raw_equation[character] == chars[num][0]:
+                    chars[num][1] = character
 
-        equals_pos = chars['1'][1]
-        y_pos = chars['2'][1]
-        x_pos = chars['3'][1]
-        plus_pos = chars['4'][1]
-        minus_pos = chars['5'][1]
+        equals_pos = chars[0][1]
+        y_pos = chars[1][1]
+        x_pos = chars[2][1]
+        plus_pos = chars[3][1]
+        minus_pos = chars[4][1]
 
         for position_one in range(equals_pos+1,x_pos):
             str_slope += str_equation[position_one]
 
+        #conditions = {0:[plus_pos,minus_pos]}
         if plus_pos != 'n/a' and minus_pos == 'n/a':
-            for position_plus in range(plus_pos+1,equation_length):
-                str_y_int += str_equation[position_plus]
-                self.sign = '+'
+            self.sign = '+'
+            str_y_int = frac_finder(plus_pos+1,equation_length,str_equation,self.sign)
         elif minus_pos != 'n/a' and plus_pos == 'n/a':
-            for position_minus in range(minus_pos,equation_length):
-                str_y_int += str_equation[position_minus]
-                self.sign = '-'
-        elif plus_pos != 'n/a' and minus_pos != 'n/a':
-            if minus_pos > plus_pos:
-                for position_minus in range(minus_pos,equation_length):
-                    str_y_int += str_equation[position_minus]
-            elif plus_pos > minus_pos:
-                str_y_int += '-'
-                for position_minus in range(plus_pos+1,equation_length):
-                    str_y_int += str_equation[position_minus]
             self.sign = '-'
+            str_y_int = frac_finder(minus_pos+1,equation_length,str_equation,self.sign)
+        elif plus_pos != 'n/a' and minus_pos != 'n/a':
+            self.sign = '-'
+            if minus_pos > plus_pos:
+                str_y_int = frac_finder(minus_pos+1,equation_length,str_equation,self.sign)
+            elif plus_pos > minus_pos:
+                str_y_int = frac_finder(plus_pos+1,equation_length,str_equation,self.sign)
         else:
-            print('Error')
+            print('Error') ##
 
         self.m = frac_to_float(str_slope)
         self.b = frac_to_float(str_y_int)
@@ -114,7 +110,7 @@ class linear():
             x_axis.append(' ')
             x_axis.append(str_x_unit)
         graph.append(x_axis)
-
+        
         unit_pairs = []
         for x_unit in range(math.ceil(len_x/scale)):
             point_xy = []
@@ -178,3 +174,12 @@ def frac_to_float(frac):
         return float(numerator)/float(denominator)
     else:
         return float(frac)
+
+def frac_finder(min,max,arr,n_sign=''):
+    str_frac = ''
+    for r_num in range(min,max):
+        str_frac += arr[r_num]
+    if n_sign == '-':
+        return n_sign+str_frac
+    else:
+        return str_frac 
