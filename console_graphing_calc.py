@@ -15,18 +15,21 @@ class linear():
         self.standard_equation = []
         self.slope_intercept_equation = []
 
-        chars = {0:['=','n/a'],1:['y','n/a'],2:['x','n/a'],3:['+','n/a'],4:['-','n/a']}
-        for character in range(equation_length):
-            for num in range(5):
-                if self.raw_equation[character] == chars[num][0]:
-                    chars[num][1] = character
+        a_dict = {0:['=','n/a'],1:['y','n/a'],2:['x','n/a']}
+        chars = location_finder(a_dict,self.raw_equation)
 
         equals_pos = chars[0][1]
         y_pos = chars[1][1]
-        x_pos = chars[2][1]
-        plus_pos = chars[3][1]
-        minus_pos = chars[4][1]
+        x_pos = chars[2][1]        
 
+        y_int_dict = {0:['+','n/a'],1:['-','n/a']}
+        y_int_chars = location_finder(y_int_dict,self.raw_equation,x_pos)
+
+        plus_pos = y_int_chars[0][1]
+        minus_pos = y_int_chars[1][1]
+
+        print(plus_pos)
+        print(minus_pos)
         for position_one in range(equals_pos+1,x_pos):
             str_slope += str_equation[position_one]
 
@@ -131,7 +134,7 @@ class linear():
             y_coord = -(coordinate_pair[1]+1)
             x_coord = self.x_factor*coordinate_pair[0]+1
             graph[y_coord][x_coord] = point
-            
+
         a = 0
         for row in graph:
             if a != 0:
@@ -183,3 +186,10 @@ def frac_finder(min,max,arr,n_sign=''):
         return n_sign+str_frac
     else:
         return str_frac 
+
+def location_finder(dictionary, e_, min=0):
+    for character in range(min,len(e_)):
+        for n in range(len(dictionary)):
+            if e_[character] == dictionary[n][0]:
+                dictionary[n][1] = character
+    return dictionary
