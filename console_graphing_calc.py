@@ -1,5 +1,28 @@
 import math
 
+def frac_to_float(frac):
+    if '/' in frac:
+        numerator,denominator = frac.split('/')
+        return float(numerator)/float(denominator)
+    else:
+        return float(frac)
+
+def frac_finder(min,max,arr,n_sign=''):
+    str_frac = ''
+    for r_num in range(min,max):
+        str_frac += arr[r_num]
+    if n_sign == '-':
+        return n_sign+str_frac
+    else:
+        return str_frac 
+
+def location_finder(dictionary, e_, min=0):
+    for character in range(min,len(e_)):
+        for n in range(len(dictionary)):
+            if e_[character] == dictionary[n][0]:
+                dictionary[n][1] = character
+    return dictionary
+
 class linear():
     def __init__(self,linear_equation):
         str_equation = str(linear_equation)
@@ -170,26 +193,3 @@ class linear():
             b += 1
 
         return prop_string
-
-def frac_to_float(frac):
-    if '/' in frac:
-        numerator,denominator = frac.split('/')
-        return float(numerator)/float(denominator)
-    else:
-        return float(frac)
-
-def frac_finder(min,max,arr,n_sign=''):
-    str_frac = ''
-    for r_num in range(min,max):
-        str_frac += arr[r_num]
-    if n_sign == '-':
-        return n_sign+str_frac
-    else:
-        return str_frac 
-
-def location_finder(dictionary, e_, min=0):
-    for character in range(min,len(e_)):
-        for n in range(len(dictionary)):
-            if e_[character] == dictionary[n][0]:
-                dictionary[n][1] = character
-    return dictionary
