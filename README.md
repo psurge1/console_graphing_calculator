@@ -182,10 +182,10 @@ print(f'{graph}')
 
 ##### plot_fmt (str)
 
-###### - 'plus' --> '+' _(default)_
-###### - 'point' --> '.'
-###### - 'carot' --> '^'
-###### - 'asterisk' --> '*'
+###### - 'plus' is '+' _(default)_
+###### - 'point' is '.'
+###### - 'carot' is '^'
+###### - 'asterisk' is '*'
 
 ##### scale (int) _(default = 1)_
 
@@ -277,7 +277,7 @@ a = linear('y=4x-2')
 print (a.equation(form='standard'))
 ```
 ```
--4.0x + y = --2.0
+-4.0x + y = -2.0
 ```
 
 ‎
