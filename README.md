@@ -43,6 +43,8 @@ X-int: -0.005291005291005291
 
 ```python
 self.m
+```
+```python
 self.slope
 ```
 
