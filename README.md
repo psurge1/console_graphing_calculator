@@ -118,7 +118,7 @@ returns the corresponding x value as a float
 ```python
 a = linear('y=4x-2')
 x = point_x(2) #x = 2
-print (y)
+print (x)
 ```
 ```
 1.0
