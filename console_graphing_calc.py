@@ -74,7 +74,8 @@ class linear():
 
         self.m = frac_to_float(str_slope)
         self.b = frac_to_float(str_y_int)
-
+        
+        self.slope = self.m
         self.y_intercept = self.b
         self.x_intercept = (0-self.b)/self.m 
 
