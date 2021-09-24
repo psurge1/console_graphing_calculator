@@ -43,6 +43,7 @@ X-int: -0.005291005291005291
 
 ```python
 self.m
+self.slope
 ```
 
 returns the slope of the given linear equation (float)
