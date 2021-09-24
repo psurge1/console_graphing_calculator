@@ -157,11 +157,13 @@ print (y)
 self.console_plot(len_x, len_y, plot_fmt, scale, description)
 ```
 
-plots the given linear equation in the console (str)
-by printing it in the console, be sure to print it in an f string
+saves the plot of the given linear equation in a variable (str)
+to display the graph in the console, print the variable in an f string
 
 For Example:
 ```python
+a = linear('y=2x+1')
+graph = a.console_plot(len_x, len_y, plot_fmt, scale, description)
 print(f'{graph}')
 ```
 
