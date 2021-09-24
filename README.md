@@ -158,7 +158,7 @@ self.console_plot(len_x, len_y, plot_fmt, scale, description)
 ```
 
 plots the given linear equation in the console (str)
-when printing the graph in the console, be sure to print it in an f string
+by printing it in the console, be sure to print it in an f string
 
 For Example:
 ```python
